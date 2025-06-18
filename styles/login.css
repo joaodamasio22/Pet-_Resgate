@@ -1,0 +1,74 @@
+@import url(index.css);
+
+.box__login{
+  padding: 130px;
+}
+.container__login{
+  font-family: inter;
+}
+.container__login h1{
+  font-size: 54px;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.container__login p{
+  text-align: center; 
+  font-size: 22px;
+
+}
+
+.login__ao__site {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin-left: 35%;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffe9cc;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.login-form button {
+  margin-top: 20px;
+  width: 50%;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+  
+}
+
+.links a {
+  text-decoration: none;
+  color: #000;
+  
+}
+
+.links a:hover{
+  text-decoration: underline;
+}
+
