@@ -9,57 +9,97 @@
     <link rel="shortcut icon" href="asseents/livecon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-      <nav>
-        <p class="logo" href="/">Pet Resgate</p>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="contato.html">CONTATO</a></li>
-          <li><a href="#">SOBRE</a></li>
-          <li><a href="#">PETS RESGATADOS</a></li>
-        </ul>
-          <div class="botao__navegacao">
-            <a href="login.html" target="_blank"><button class="entrar" type="submit">ENTRAR</button></a>
-            <a href="cadastro.html" target="_blank"><button class="cadastro" type="submit">CADASTRAR-SE</button></a>
+    <div class="conteudo">
+      <header>
+        <nav>
+          <p class="logo" href="/">Pet Resgate</p>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
           </div>
-      </nav>
-    </header>
-
-    <div class="container">
-    <h2>Novo usuário? Adicione suas informações</h2>
-    <button class="btn-facebook">Entrar com Facebook</button>
-    <button class="btn-google">Entrar com Google</button>
-    <div class="divider">Ou use o formulário abaixo</div>
-
-    <div class="form-box">
-      <h3>Cadastro</h3>
-      <form>
-        <label for="nome">Seu nome</label>
-        <input type="text" id="nome" name="nome" />
-
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" />
-
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" />
-
-        <label for="estado">Estado*</label>
-        <input type="text" id="estado" name="estado" required />
-
-        <label for="cidade">Cidade*</label>
-        <input type="text" id="cidade" name="cidade" required />
-
-        <button type="submit">ENTRAR</button>
-      </form>
+          <ul class="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="#">SOBRE</a></li>
+            <li><a href="#">PETS RESGATADOS</a></li>
+          </ul>
+            <div class="botao__navegacao">
+              <a href="login.html" target="_blank"><button class="entrar" type="submit">ENTRAR</button></a>
+              <a href="cadastro.html" target="_blank"><button class="cadastro" type="submit">CADASTRAR-SE</button></a>
+            </div>
+        </nav>
+      </header>
+        <section class="container__cadastro">
+          <h1>
+            Bem-Vindo ao PetResgate
+          </h1>
+          <p class="subtitulo">
+            Para divulgar ou adotar um animalzinho,
+       você precisa de um cadastro
+          </p>
+          <div class="container__informacoes">
+            <form class="dados__cadastro">
+              <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="name" id="nome">
+              </p>
+              <p>
+                <label for="e-mail">E-Mail:</label>
+                <input type="email" name="email" id="e-mail">
+              </p>
+              <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+              </p>
+              <p>
+                <label for="estado">Estado:</label>
+                  <select id="estado" name="estado">
+                    <option value="">Estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+                </p>
+                <p>
+                <label for="Cidade">Cidade:</label>
+                  <select id="Cidade" name="Cidade">
+                    <option value="">Cidade</option>
+      
+                  </select>
+                </p>
+                <p >
+                  <input id="botao__entrar" type="button" value="Entrar">
+                </p>
+            </form>
+          </div>
+        </section>
+      
     </div>
-  </div>
-        
-
     <footer>
     <div class="footer-section">
       <h4>PARCERIA</h4>

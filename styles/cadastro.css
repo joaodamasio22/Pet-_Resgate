@@ -4,6 +4,23 @@
     margin: 0;
     padding: 0;
 }
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo{
+  flex: 1;
+}
+body{
+  font-family: 'inter';
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -82,105 +99,76 @@ main {
   transition: 0.3s;
 }
 
-
-.container {
-    max-width: 500px;
-    margin: 60px auto;
-    padding: 40px;
-    background-color: #f5f6f8;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    font-family: "inter";
+.container__cadastro{
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  
 }
 
-.container h2 {
-    font-size: 20px;
-    margin-bottom: 30px;
-    font-family: "inter";
+.container__cadastro h1{
+  font-size: 64px;
+  text-align: center;
+  margin-top: 10vh;
+
 }
 
-.btn-facebook,
-.btn-google {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    margin: 10px auto;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn-facebook {
-    background-color: #3b5998;
-    color: white;
-}
-
-.btn-facebook:hover{
-    background-color: #3b5898e5;
-    transform: scale(1.05) translate(-0.1px);
-    box-shadow: 1px 1px 2px #000000;
-}
-.btn-google {
-    background-color: #ffffff;
-    color: black;
-    border: 1px solid #cccccc;
-}
-
-.btn-google:hover{
-    background-color: #ffffff;
-    transform: scale(1.05) translate(-0.1px);
-    box-shadow: 1px 1px 2px #000000;
-}
-.divider {
-    margin: 20px 0;
-    font-size: 14px;
-    color: #333;
-}
-
-.form-box {
-    background-color: #ffe9cc;
-    padding: 30px;
-    text-align: left;
-}
-
-.form-box h3 {
-    margin-top: 0;
-    font-size: 18px;
-}
-
-.form-box label {
-    display: block;
-    margin: 15px 0 5px;
-    font-size: 14px;
-}
-
-.form-box input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #f1f1f1;
-}
-
-.form-box button {
-    display: block;
-    margin: 30px auto 0;
-    padding: 12px 40px;
-    background-color: #ff9200;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.form-box button:hover{
-    background-color: #ff9100e5;
-    transform: scale(1.05) translate(-0.1px);
-    box-shadow: 1px 1px 2px black;
+.subtitulo{
+  text-align: center;
+  font-size: 28px;
+  margin-top: 1.5vh;
 }
 
 
+.container__informacoes{
+  padding: 15px;
+  border-radius: 5px;
+  border: 5px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 0.5px 0.5px 0.5px 1px;
+  margin-top: 5vh;
 
+}
+
+.container__informacoes #nome{
+  padding: 1px;
+  width: 100%;
+}
+
+.container__informacoes #e-mail{
+  padding: 1px;
+  width: 100%;
+}
+
+.container__informacoes #senha{
+  width: 100%;
+  padding: 1px;
+}
+
+.container__cadastro #estado{
+  width: 100%;
+  padding: 1px;
+}
+
+.container__cadastro #Cidade{
+  width: 100%;
+  padding: 1px;
+}
+
+#botao__entrar{
+  margin-top: 20px;
+  width: 50%;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
 footer {
   background-color: #0097a7;
   color: white;
