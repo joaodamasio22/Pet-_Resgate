@@ -126,42 +126,32 @@ main {
   border: 5px;
   width: 500px;
   margin: auto;
-  box-shadow: 0.5px 0.5px 0.5px 1px;
+  
   margin-top: 5vh;
 
 }
 
-.container__informacoes #nome{
-  padding: 1px;
+.container__informacoes #nome,
+.container__informacoes #e-mail,
+.container__informacoes #senha,
+.container__informacoes #estado,
+.container__informacoes #cidade{
   width: 100%;
+  padding: 10px;
+  background-color: #ffe9cc;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0.9vh;
 }
 
-.container__informacoes #e-mail{
-  padding: 1px;
-  width: 100%;
-}
-
-.container__informacoes #senha{
-  width: 100%;
-  padding: 1px;
-}
-
-.container__cadastro #estado{
-  width: 100%;
-  padding: 1px;
-}
-
-.container__cadastro #cidade{
-  width: 100%;
-  padding: 1px;
-}
 
 #botao__entrar{
   margin-top: 20px;
   width: 50%;
   padding: 10px;
-  background-color: orange;
-  color: white;
+  background-color: #ffa500;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   display: block;
@@ -169,6 +159,20 @@ main {
   margin-right: auto;
   border-radius: 5px;
 }
+
+#ja__possui__conta{
+  margin-top: 1.5vh;
+  text-align: center;
+}
+
+#ja__possui__conta a{
+  color: #0000ff;
+}
+
+#ja__possui__conta a:hover{
+  text-decoration: underline;
+}
+
 footer {
   background-color: #0097a7;
   color: white;
