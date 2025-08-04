@@ -91,9 +91,9 @@ main {
     justify-content: center;
 }
 
-.titulo__sobre_nos,
-.titulo__sobrenos{
+.titulo__sobre_nos{
     font-size: 64px;
+    color: #009CA6;
 }
 
 .paragrafo__sobre_nos{

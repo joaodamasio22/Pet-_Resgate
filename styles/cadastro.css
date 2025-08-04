@@ -13,14 +13,13 @@ html, body{
 body{
   display: flex;
   flex-direction: column;
+  font-family: 'inter';
 }
 
 .conteudo{
   flex: 1;
 }
-body{
-  font-family: 'inter';
-}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -99,6 +98,12 @@ main {
   transition: 0.3s;
 }
 
+h1{
+  font-size: 64px;
+  text-align: center;
+  margin-top: 10vh;
+  color: #009CA6;
+}
 .container__cadastro{
   width: 100%;
   height: auto;
