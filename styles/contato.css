@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 a {
   color: #fff;
@@ -50,7 +51,9 @@ nav {
 
 .entrar:hover,
 .cadastro:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -94,6 +97,7 @@ main {
 .titulo__sobre_nos{
     font-size: 64px;
     color: #009CA6;
+    margin-bottom: 2vh;
 }
 
 .paragrafo__sobre_nos{
@@ -106,13 +110,26 @@ main {
     height: auto;
 }
 
+.imagem__sobre__nos:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
 .container__informacoes{
-    background-color: #FEE9D1;
-    width: 1114px;
-    height: 564px;
-    display: block;
-    margin-left: 25em;
-    margin-top: 5vh;
+    margin: 1.5vh 0;
+    padding: 10px 5px;
+    border-radius: 15px;
+    border: #000000 1px solid;
+    box-shadow: 0 4px 8px #00000033;
+    color: #F9F8FA;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 52vh;
+    position: relative;
 }
 
 .informacoes{
@@ -128,6 +145,7 @@ main {
 .lista__informacoes{
     list-style-type: none;
     font-family: 'inter';
+    color: #000000;
 }
 
  
@@ -142,34 +160,37 @@ main {
     margin-top: 3.5vh;
 }
 
-.nome{
-    width: 500px;
-    height: 39px;
-}
-
+.nome,
 .email{
     width: 500px;
     height: 39px;
+    border-radius: 5px;
+    border: 1px solid #000000;
 }
 
+
 .assunto{
-    width: 1080px;
+    width: 90%;
     height: 39px;
+    border-radius: 5px;
+    border: 1px solid #000000;
 }
 
 .container__assunto{
     margin-top: 2em;
-    margin-left: 1.7vh; 
+    margin-left: 2.7vh; 
 }
 
 .container__menssagem{
     margin-top: 2em;
-    margin-left: 1.7vh;
+    margin-left: 2.7vh;
 }
 
 .menssagem{
-    width: 1035px;
-    height: 183px;
+    width: 90%;
+    height: 10vh;
+    border: 1px solid #000000;
+    border: 1px solid #000000;
 }
 
 .botao__enviar{
@@ -184,9 +205,10 @@ main {
 
 .botao__enviar:hover{
     cursor: pointer;
-    transform: scale(1.01) translate(0px);
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #ff9500d5;
-    box-shadow: 1px 1px 2px #000000;
 }
 
 .espaco__footer{

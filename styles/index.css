@@ -55,7 +55,9 @@ nav {
 
 .entrar:hover,
 .cadastro:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 10.6s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -110,8 +112,9 @@ h1{
 }
 
 .imagem_bem_vindo:hover{
-  transition: transform 1 ease;
-  transform: scale(1.05) translateX(-5px);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  
   cursor: pointer;
 }
 .container__bem_vindo{
@@ -146,8 +149,9 @@ h1{
 
 .pets__resgatado img:hover{
   cursor: pointer;
-  transition: transform 0.5 ease;
-  transform: scale(1.05) translate(-5px);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .pets__resgatado h3 {
@@ -181,8 +185,9 @@ h1{
 
 .texto__variedades img:hover{
   cursor: pointer;
-  transition: transform 0.5 ease;
-  transform: scale(1.05) translate(-5px);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .foto__gato{
@@ -237,14 +242,21 @@ h1{
 
 .botao__ajude__aqui:hover{
   background-color: #f18e03;
-  transition: transform 0.5 ease;
-  transform: scale(1) translate(-10px);
-  box-shadow: 2px 2px 3px #000000;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
 
 .imagem__segundario{
   margin-left: 200px;
   margin-bottom: 50px;
+}
+
+.imagem__segundario:hover{
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
 

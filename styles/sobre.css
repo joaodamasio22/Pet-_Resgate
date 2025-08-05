@@ -61,7 +61,9 @@ nav {
 
 .entrar:hover,
 .cadastro:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -94,7 +96,7 @@ main {
 }
 
 #container{
-    margin: 1.5vh 0;
+    margin: 2.5vh 0 1.5vh 0;
     padding: 10px 5px;
     border-radius: 15px;
     border: #000000 1px solid;
@@ -134,6 +136,16 @@ main {
   margin-top: 20px;
 }
 
+.imagem__sobre{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.imagem__sobre:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.5s ease;
+  
+}
 footer {
   background-color: #0097a7;
   color: white;

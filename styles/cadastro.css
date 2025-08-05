@@ -67,6 +67,8 @@ nav {
 .entrar:hover,
 .cadastro:hover{
   transform: scale(1.1);
+  transition: background-color 0.3s ease, transform 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -131,9 +133,7 @@ h1{
   border: 5px;
   width: 500px;
   margin: auto;
-  
   margin-top: 5vh;
-
 }
 
 .container__informacoes #nome,
