@@ -126,6 +126,14 @@ main {
     height: 35vh;
   
 }
+
+.slogan{
+  color: #009CA6;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 footer {
   background-color: #0097a7;
   color: white;
