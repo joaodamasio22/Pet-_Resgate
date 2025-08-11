@@ -167,7 +167,6 @@ h1{
   font-family: 'Inter', sans-serif;
 }
 
-
 .container__variedades{
   justify-content: center;
 }
@@ -190,15 +189,13 @@ h1{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.foto__gato{
+.foto__gato,
+.foto__cachorro{
   width: 363px;
   height: 259px;
+  border-radius: 10px;
 }
 
-.foto__cachorro{
-  width: 362px;
-  height: 259px;
-}
 .segundario{
   display: flex;
   margin-top: 50px;
