@@ -146,6 +146,7 @@ main {
   transition: background-color 0.3s ease, transform 0.5s ease;
   
 }
+
 footer {
   background-color: #0097a7;
   color: white;
@@ -199,6 +200,8 @@ footer {
 .social-icons a:hover {
   color: #ddd;
 }
+
+
 
 
 
