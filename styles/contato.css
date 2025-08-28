@@ -342,6 +342,9 @@ footer {
 
 @media (max-width: 768px) {
 
+  .logo{
+    font-size: 20px;
+  }
   /* Menu de navegação em coluna */
   .nav-list {
     flex-direction: column;
@@ -487,4 +490,4 @@ footer {
   }
 
  
-}
+} 
