@@ -47,6 +47,7 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #009CA6;
   height: 8vh;
+  width: 100%;
 }
 
 .botao__navegacao{
@@ -188,7 +189,7 @@ main {
 
 .assunto{
     width: 90%;
-    height: 2.5em;
+    height: 3.5em;
     border: 0.1em solid #000000;
     border-radius: 7px;
 }

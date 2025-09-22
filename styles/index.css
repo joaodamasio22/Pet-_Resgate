@@ -47,6 +47,7 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #009CA6;
   height: 8vh;
+  width: 100%;
 }
 
 .botao__navegacao{
@@ -122,7 +123,7 @@ h1{
 .paragrafo__bem_vindo{
   font-size: 28px;
   padding-top: 2em;
-  margin-left: 60px;
+  margin-left: 10rem;
 }
 
 .imagem_bem_vindo{

@@ -47,6 +47,7 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #009CA6;
   height: 8vh;
+  width: 100%;
 }
 
 .botao__navegacao{
