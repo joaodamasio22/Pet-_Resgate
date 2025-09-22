@@ -4,6 +4,7 @@ class MobileNavbar {
     this.navList = document.querySelector(navList);
     this.navLinks = document.querySelectorAll(navLinks);
     this.activeClass = "active";
+    this.mobileMenu.style.position = "fixed";
 
     this.handleClick = this.handleClick.bind(this);
   }

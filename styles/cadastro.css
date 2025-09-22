@@ -134,9 +134,9 @@ h1{
 .container__informacoes #senha,
 .container__informacoes #estado,
 .container__informacoes #cidade{
-  width: 100%;
+  width: 90%;
   padding: 0.6em; /* antes 10px */
-  background-color: #ffe9cc;
+  background-color: #009ba617;
   border: none;
   outline: none;
   border-radius: 0.3em; /* antes 5px */
@@ -170,7 +170,7 @@ h1{
 }
 
 #ja__possui__conta a{
-  color: #0000ff;
+  color: #000000c9;
 }
 
 #ja__possui__conta a:hover{
