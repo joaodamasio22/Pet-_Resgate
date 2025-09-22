@@ -14,15 +14,6 @@ main{
   min-width: 320px;
   margin: auto;
 }
-
-header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 10px 15px;
-  background-color: #0097a7; 
-}
-
 a {
   color: #fff;
   text-decoration: none;
@@ -343,9 +334,6 @@ footer {
 
 @media (max-width: 768px) {
 
-  .logo{
-    font-size: 20px;
-  }
   /* Menu de navegação em coluna */
   .nav-list {
     flex-direction: column;
@@ -491,4 +479,4 @@ footer {
   }
 
  
-} 
+}
