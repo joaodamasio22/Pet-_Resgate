@@ -109,7 +109,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     min-height: 52vh;
-    position: relative;
 }
 #container h1{
     text-align: center;

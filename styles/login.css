@@ -131,7 +131,6 @@ main {
     width: 35%;
     margin: 3vh auto 0;
     min-height: 30vh;
-    position: relative;
 }
 
 .login-form label {
@@ -145,7 +144,7 @@ main {
 .login-form input {
   width: 96%;
   padding: 0.625em;
-  background-color: #ffe9cc;
+  background-color: #009ba617;
   border: none;
   outline: none;
   border-radius: 0.3em;
@@ -181,7 +180,7 @@ main {
 
 .links a {
   text-decoration: none;
-  color: #0000ff;
+  color: #000000c9;
 }
 
 .links a:hover{
