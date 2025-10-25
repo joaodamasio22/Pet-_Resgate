@@ -95,3 +95,31 @@ document.addEventListener("DOMContentLoaded", () => {
   carregarEstados();
 });
 
+var nome = document.getElementById("nome")
+var email = document.getElementById("e-mail")
+var senha = document.getElementById("senha")
+var estado = document.getElementById("estado")
+var cidade = document.getElementById("cidade")
+
+const form = document.getElementById("form__cadastro")
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+
+const dados = {
+  nome: nome.value,
+  email: email.value,
+  senha: senha.value,
+  estado: estado.value,
+  cidade: cidade.value
+}
+
+const response = await fetch("http://localhost:3000/cadastro", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(dados)
+});
+
+ const resultado = await response.json();
+  alert(resultado.mensagem || "Cadastro feito com sucesso!");
+});

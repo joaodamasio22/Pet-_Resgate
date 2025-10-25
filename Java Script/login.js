@@ -42,3 +42,6 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
+
+// PEGANDO INFORMAÇÕES DO FORMULÁRIO DE LOGIN E ENVIANDO PARA O SERVIDOR
+

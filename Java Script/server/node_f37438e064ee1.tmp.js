@@ -23,13 +23,13 @@ const bcrypt = require('bcrypt')
 
 
 app.post('/cadastro', async (req, res) => {
-  const { nome, email, senha, estado, cidade } = req.body;
+  const { nome, email, senha } = req.body;
 
   try {
     const senhacriptografada = await bcrypt.hash(senha, 10);
     await pool.query(
-      "INSERT INTO usuarios (nome, email, senha, estado, cidade ) VALUES ($1, $2, $3, $4, $5)",
-      [nome, email, senhacriptografada, estado, cidade]
+      "INSERT INTO usuarios (nome, email, senha) VALUES ($1, $2, $3)",
+      [nome, email, senhacriptografada]
     );
     res.json({ mensagem: "Usuário cadastrado com sucesso!" });
   } catch (err) {
