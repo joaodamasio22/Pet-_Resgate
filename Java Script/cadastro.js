@@ -94,3 +94,4 @@ estadoSelect.addEventListener("change", () => {
 document.addEventListener("DOMContentLoaded", () => {
   carregarEstados();
 });
+
