@@ -1,11 +1,14 @@
 //parte de ligação do cliente ao servidor
 
-const express = require('express')
-const app = express()
+const express = require("express");
+const cors = require("cors");
+const app = express();
 
-app.use(express.json())
-const cors = require('cors')
-app.use(cors())
+app.use(cors({
+  origin: ["http://localhost:5501", "http://127.0.0.1:5501"]// <---- libera o Live Server
+}));
+
+app.use(express.json());
 
 const { Pool } = require ('pg')
 const pool = new Pool({
@@ -23,17 +26,23 @@ const bcrypt = require('bcrypt')
 
 
 app.post('/cadastro', async (req, res) => {
+  console.log("Dados recebidos do frontend:", req.body);
   const { nome, email, senha, estado, cidade } = req.body;
 
-  try {
+  if (!nome || !email || !senha || !estado || !cidade) {
+    console.log("Erro: algum campo está vazio");
+    return res.status(400).json({ mensagem: "Preencha todos os campos!" });
+  }
+
+ try {
     const senhacriptografada = await bcrypt.hash(senha, 10);
     await pool.query(
-      "INSERT INTO usuarios (nome, email, senha, estado, cidade ) VALUES ($1, $2, $3, $4, $5)",
+      "INSERT INTO usuarios (nome, email, senha, estado, cidade) VALUES ($1, $2, $3, $4, $5)",
       [nome, email, senhacriptografada, estado, cidade]
     );
     res.json({ mensagem: "Usuário cadastrado com sucesso!" });
   } catch (err) {
-    console.error(err);
+    console.error("Erro no banco de dados:", err);
     res.status(500).json({ mensagem: "Erro ao cadastrar usuário." });
   }
 });
