@@ -63,8 +63,7 @@ app.post("/login", async (req, res) => {
 
     if (!senhaCorreta) return res.status(401).json({ erro: "Senha incorreta" });
 
-    console.log("Usuário logado com sucesso:", usuario.nome);
-    res.json({ mensagem: "Login bem-sucedido", nome: usuario.nome });
+    res.json({ mensagem: "Login bem-sucedido!", nome: usuario.nome });
   } catch (err) {
     console.error(err);
     res.status(500).json({ erro: "Erro ao fazer login" });

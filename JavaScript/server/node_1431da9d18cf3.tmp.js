@@ -37,7 +37,7 @@ app.post('/cadastro', async (req, res) => {
  try {
     const senhacriptografada = await bcrypt.hash(senha, 10);
     await pool.query(
-      "INSERT INTO usuario (nome, email, senha, estado, cidade) VALUES ($1, $2, $3, $4, $5)",
+      "INSERT INTO usuarios (nome, email, senha, estado, cidade) VALUES ($1, $2, $3, $4, $5)",
       [nome, email, senhacriptografada, estado, cidade]
     );
     res.json({ mensagem: "Usuário cadastrado com sucesso!" });
@@ -55,7 +55,7 @@ app.post("/login", async (req, res) => {
   const { email, senha } = req.body;
 
   try {
-    const result = await pool.query("SELECT * FROM usuario WHERE email = $1", [email]);
+    const result = await pool.query("SELECT * FROM usuarios WHERE email = $1", [email]);
     if (result.rows.length === 0) return res.status(401).json({ erro: "Usuário não encontrado" });
 
     const usuario = result.rows[0];
@@ -63,8 +63,7 @@ app.post("/login", async (req, res) => {
 
     if (!senhaCorreta) return res.status(401).json({ erro: "Senha incorreta" });
 
-    console.log("Usuário logado com sucesso:", usuario.nome);
-    res.json({ mensagem: "Login bem-sucedido", nome: usuario.nome });
+    res.json({ mensagem: "Login bem-sucedido!", nome: usuario.nome });
   } catch (err) {
     console.error(err);
     res.status(500).json({ erro: "Erro ao fazer login" });
