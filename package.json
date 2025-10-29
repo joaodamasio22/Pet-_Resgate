@@ -1,0 +1,19 @@
+{
+  "name": "pet-_resgate",
+  "version": "1.0.0",
+  "description": "🐾 Site de Adoção de Pets\r Promovemos encontros entre pessoas e pets à espera de um lar.\r Nosso site facilita o processo de adoção, conectando animais resgatados com pessoas dispostas a oferecer amor, cuidado e um novo começo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
+}
