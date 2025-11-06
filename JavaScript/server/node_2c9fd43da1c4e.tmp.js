@@ -1,4 +1,4 @@
-//ligação do cliente ao servidor
+//parte de ligação do cliente ao servidor
 
 const express = require("express");
 const cors = require("cors");
@@ -13,7 +13,7 @@ app.use(express.json());
 const { Pool } = require ('pg')
 const pool = new Pool({
     user: "postgres",
-    password: "#",
+    password: "1234567890",
     host: "localhost",
     port: 5432,
     database: "Pet-Resgate"
