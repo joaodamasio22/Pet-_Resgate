@@ -1,6 +1,7 @@
 // ------------------------------
 // CONFIGURAÇÕES INICIAIS
 // ------------------------------
+
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
@@ -29,6 +30,7 @@ const pool = new Pool({
 // ------------------------------
 // ROTAS DO CADASTRO
 // ------------------------------
+
 app.post("/cadastro", async (req, res) => {
   console.log("📩 Dados recebidos do frontend:", req.body);
   const { nome, email, senha, estado, cidade } = req.body;
