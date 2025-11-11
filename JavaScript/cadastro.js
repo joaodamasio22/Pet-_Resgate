@@ -12,7 +12,9 @@ class MobileNavbar {
     this.navLinks.forEach((link, index) => {
       link.style.animation
         ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
+          }s`);
     });
   }
 
@@ -27,21 +29,27 @@ class MobileNavbar {
   }
 
   init() {
-    if (this.mobileMenu) this.addClickEvent();
+    if (this.mobileMenu) {
+      this.addClickEvent();
+    }
     return this;
   }
 }
 
-const mobileNavbar = new MobileNavbar(".mobile-menu", ".nav-list", ".nav-list li");
+const mobileNavbar = new MobileNavbar(
+  ".mobile-menu",
+  ".nav-list",
+  ".nav-list li",
+);
 mobileNavbar.init();
 
-// ---------------------- IBGE API ----------------------
+// Requisuição de estados e cidades, utilizando a API do IBGE
 
 const estadoSelect = document.getElementById("estado");
 const cidadeSelect = document.getElementById("cidade");
 
 function carregarEstados() {
-  fetch("http://localhost:3000/estados")
+  fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome")
     .then(res => res.json())
     .then(estados => {
       estados.forEach(estado => {
@@ -60,10 +68,9 @@ function carregarCidades(estadoId) {
   cidadeSelect.innerHTML = "<option>Carregando cidades...</option>";
 
   if (estadoId) {
-    fetch(`http://localhost:3000/cidades/${estadoId}`)
+    fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estadoId}/municipios`)
       .then(res => res.json())
       .then(cidades => {
-        console.log(cidades);
         cidadeSelect.innerHTML = "<option value=''>Selecione a cidade</option>";
         cidades.forEach(cidade => {
           const option = document.createElement("option");
@@ -84,9 +91,9 @@ estadoSelect.addEventListener("change", () => {
   carregarCidades(estadoSelect.value);
 });
 
-document.addEventListener("DOMContentLoaded", carregarEstados);
-
-// ---------------------- CADASTRO ----------------------
+document.addEventListener("DOMContentLoaded", () => {
+  carregarEstados();
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const nome = document.getElementById("nome");
@@ -97,9 +104,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("form__cadastro");
 
   form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    alert("Botão de cadastro clicado!");
-    alert("Enviando dados para o servidor...");
+  e.preventDefault();
+  alert("Botão de cadastro clicado!");
+  alert("Enviando dados para o servidor...");
 
     const dados = {
       nome: nome.value,
@@ -117,14 +124,15 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       const resultado = await response.json();
-      alert(resultado.mensagem || "Cadastro feito com sucesso!");
+      alert(resultado.mensagem || "Cadastro feito com sucesso!")
 
-      if (response.ok) {
-        window.location.href = "login.html";
+      if (response.ok) {        
+        window.location.href = "login.html"
       }
     } catch (erro) {
       console.error("Erro na requisição:", erro);
       alert("Erro ao conectar com o servidor.");
+      
     }
   });
 });
