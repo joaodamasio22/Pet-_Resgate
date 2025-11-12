@@ -8,7 +8,7 @@ const path = require("path");
 const app = express();
 
 app.use(cors({
-  origin: ["*"] // libera o Live Server local
+  origin: [""] // libera o Live Server local
 }));
 
 app.use(express.json());
