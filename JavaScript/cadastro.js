@@ -105,8 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  alert("Botão de cadastro clicado!");
-  alert("Enviando dados para o servidor...");
+
 
     const dados = {
       nome: nome.value,

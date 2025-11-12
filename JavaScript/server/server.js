@@ -4,6 +4,7 @@
 
 const express = require("express");
 const cors = require("cors");
+const path = require("path"); // <--- adicionado
 const app = express();
 
 app.use(cors({
@@ -11,6 +12,19 @@ app.use(cors({
 }));
 
 app.use(express.json());
+
+// ------------------------------
+// SERVIR O FRONTEND
+// ------------------------------
+app.use(express.static(path.join(__dirname, "../../"))); // <--- serve seus HTML, CSS e JS
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../../index.html"));
+});
+
+// ------------------------------
+// CONEXÃO COM O BANCO DE DADOS
+// ------------------------------
 
 const { Pool } = require("pg");
 const bcrypt = require("bcrypt");
@@ -81,7 +95,7 @@ app.post("/login", async (req, res) => {
 // INICIA O SERVIDOR
 // ------------------------------
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000; // <--- usa porta dinâmica no Render
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
