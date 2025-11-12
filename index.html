@@ -23,9 +23,14 @@
           <li><a href="sobre.html">SOBRE</a></li>
           <li><a href="pets_resgatados.html">PETS RESGATADOS</a></li>
         </ul>
-          <div class="botao__navegacao">
-            <a href="login.html"><button class="entrar" type="submit">ENTRAR</button></a>
-            <a href="cadastro.html"><button class="cadastro" type="submit">CADASTRAR-SE</button></a>
+          <div class="botao__navegacao" id="menuLogin">
+            <a href="login.html"><button id="btnEntrar" class="entrar" type="button">ENTRAR</button></a>
+            <a href="cadastro.html"><button id="btnCadastrar" class="cadastro" type="button">CADASTRAR-SE</button></a>
+          </div>
+
+          <!-- aparece a foto depois do login -->
+          <div id="menuUsuario" style="display: none;">
+            <div id="inicialUsuario" class="inicial-usuario"></div>
           </div>
       </nav>
     </header>
@@ -91,6 +96,7 @@
     <div class="footer-section">
       <h4>PARCERIA</h4>
       <div class="footer-links">
+        <p>adotepetz</p>
         <p>Cobasi</p>
         <p>Special Dog</p>
         <p>Premier</p>
@@ -126,5 +132,6 @@
 </main>
 
 <script src="JavaScript/index.js"></script>
+<script src="JavaScript/menu.js"></script>
 </body>
 </html>

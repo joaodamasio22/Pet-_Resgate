@@ -65,7 +65,7 @@ if (formLogin) {
 
       if (response.ok) {
         alert("Login realizado com sucesso!")
-        
+        localStorage.setItem("usuarioNome", data.nome);
         window.location.href = "index.html"
       } else {
         alert(data.erro || "Erro ao fazer login.")

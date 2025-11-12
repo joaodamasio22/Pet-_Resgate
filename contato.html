@@ -10,25 +10,32 @@
   </head>
 <body>
     <header>
-      <nav>
-        <p class="logo" href="/">Pet Resgate🦴</p>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="contato.html">CONTATO</a></li>
-          <li><a href="sobre.html">SOBRE</a></li>
-          <li><a href="pets_resgatados.html">PETS RESGATADOS</a></li>
-        </ul>
-          <div class="botao__navegacao">
-            <a href="login.html" target="_blank"><button class="entrar" type="submit">ENTRAR</button></a>
-            <a href="cadastro.html" target="_blank"><button class="cadastro" type="submit">CADASTRAR-SE</button></a>
-          </div>
-      </nav>
-    </header>
+  <nav class="navbar">
+    <p class="logo">PET RESGATE</p>
+
+    <div class="mobile-menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+    <ul class="nav-list">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="contato.html">CONTATO</a></li>
+      <li><a href="sobre.html">SOBRE</a></li>
+      <li><a href="pets_resgatados.html">PETS RESGATADOS</a></li>
+    </ul>
+
+    <div class="botao__navegacao" id="menuLogin">
+      <a href="login.html"><button id="btnEntrar" class="entrar" type="button">ENTRAR</button></a>
+      <a href="cadastro.html"><button id="btnCadastrar" class="cadastro" type="button">CADASTRAR-SE</button></a>
+    </div>
+
+    <div id="menuUsuario" style="display: none;">
+      <div id="inicialUsuario" class="inicial-usuario"></div>
+    </div>
+  </nav>
+</header>
     <main>
         <section>
                 <div class="informacao__sobre_nos">
@@ -76,6 +83,7 @@
     <div class="footer-section">
       <h4>PARCERIA</h4>
       <div class="footer-links">
+        <p>adotepetz</p>
         <p>Cobasi</p>
         <p>Special Dog</p>
         <p>Premier</p>
@@ -110,5 +118,6 @@
   </footer>
     </main>
     <script src="JavaScript/contato.js"></script>
+    <script src="JavaScript/menu.js"></script>
 </body>
 </html>
