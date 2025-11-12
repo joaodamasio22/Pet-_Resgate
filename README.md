@@ -16,7 +16,8 @@ Temos aqui muitos animais esperando por uma nova chance — e esperamos que voc�
 ❤️ Interface amigável e acessível para facilitar o processo de adoção
 
 🛠️ Tecnologias Utilizadas
-Frontend: HTML, CSS, JavaScript
+Frontend: HTML, CSS, JavaScript.
+BackEnd: Node.Js, Express.Js, PostgreSQL
 
 API de Localidades: IBGE (https://servicodados.ibge.gov.br/api/docs/localidades)
 
@@ -41,3 +42,4 @@ Este projeto está sob a licença MIT.
 A todas as pessoas que dedicam tempo ao cuidado e resgate de animais.
 A você, que está disposto a oferecer um novo lar.
 E aos serviços públicos, como o IBGE, que fornecem dados essenciais para construirmos ferramentas mais completas e acessíveis.
+
