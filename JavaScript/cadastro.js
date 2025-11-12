@@ -124,10 +124,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       const resultado = await response.json();
-      alert(resultado.mensagem || "Cadastro feito com sucesso!");
+      alert(resultado.mensagem || "Cadastro feito com sucesso!")
+
+      if (response.ok) {        
+        window.location.href = "login.html"
+      }
     } catch (erro) {
       console.error("Erro na requisição:", erro);
       alert("Erro ao conectar com o servidor.");
+      
     }
   });
 });
+

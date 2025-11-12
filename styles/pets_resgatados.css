@@ -41,11 +41,14 @@ nav {
   width: 100%;
 }
 
+
 .botao__navegacao{
   padding: 10px;
   background: #009CA6;
-  margin-right: 10px;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 10px; 
 }
 
 
@@ -58,6 +61,7 @@ nav {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 .entrar:hover,
@@ -94,6 +98,26 @@ main {
   background: #fff;
   margin: 8px;
   transition: 0.3s;
+}
+
+.inicial-usuario {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #00838f; 
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.inicial-usuario:hover {
+  background-color: #00acc1;
 }
 
 #titulo{
